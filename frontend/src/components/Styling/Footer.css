@@ -1,0 +1,56 @@
+.footer{
+    background-color: dimgray;
+    width: 100%;
+    padding-top: 20px;
+    position: absolute; /*place the footer as the last context of the website*/
+    bottom: 0; /*place the footer at the bottom of the website*/
+    left: 0;
+    text-align: center;
+}
+.footer-img img{
+    max-width: 100px;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+}
+.footerNav{
+    width: 100%;
+}
+.footerNav ul{
+    display: flex;
+    list-style-type:none; /*Removes bullet points*/
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: lightgray;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    text-decoration: none; /*Removes lines under the text*/
+    font-size: 1.3em;
+}
+
+.footerNav ul li a:hover{
+    opacity: 0.7;
+}
+.footer-facts{
+    text-align: center;
+    color: lightgray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+}
+.horizontal-line {
+    border-top: 2px solid darkgray; /* Adjust thickness and color as needed */
+    width: 80%; /* Ensures the line spans the entire width of the footer */
+    margin: 20px; /* Adjust margin as needed */
+    position: relative; /* Position the line absolutely */
+    left:8%; /* Align the left edge of the line to the middle of the footer */
+    bottom: 0; /* Position the line at the bottom of the footer */
+}
+.footer-copyright{
+    margin: 20px;
+    text-align: center;
+    color: lightgray;
+    font-size: 0.7em;
+    font-family: 'Poppins', sans-serif;
+}
+

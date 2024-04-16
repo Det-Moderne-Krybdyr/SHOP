@@ -28,21 +28,20 @@ router.post('/contact/:a', async(req, res) => {
   res.end()
 })
 
-router.get('/users', async (req, res) => {
+router.get('/products', async (req, res) => {
   try {
-    // Fetch user data from MongoDB
-    const users = await schemas.Users.find({}).exec();
-    if (users && users.length > 0) {
-      const userNames = users.map(user => user.name);
-      res.json(userNames);
+    const productsData = await schemas.Products.find({}).exec();
+    if (productsData && productsData.length > 0) {
+      res.json(productsData); // Sending the found productsData
     } else {
-      res.status(404).json({ error: 'No users found' });
+      res.status(404).json({ error: 'No products found' });
     }
   } catch (error) {
-    console.error('Error fetching users:', error);
+    console.error('Error fetching products:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
 
 
 module.exports = router
