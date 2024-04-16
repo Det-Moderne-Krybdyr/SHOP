@@ -1,32 +1,81 @@
 .Body{
-    text-align: center;
+  text-align: center;
+  display: flex;
 }
 
 .Box {
-    position: relative;
-    width: 300px; /* Adjust according to your image dimensions */
-    height: 400px; /* Adjust according to your image dimensions */
-    padding: 10px;
-    display: inline-block;
-  }
+  position: relative;
+  width: 300px; /* Adjust according to your image dimensions */
+  height: 400px; /* Adjust according to your image dimensions */
+  padding: 10px;
+}
 
 .Body a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 .Body a:hover {
-    background-color: green;
+  background-color: green;
 }
 
-  .TextOverlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    padding: 10px; /* Adjust padding as needed */
-    border-radius: 5px; /* Rounded corners for the overlay */
-  }
-  
+.TextOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners for the overlay */
+}
+
+/* Body.css */
+
+/* Styles for slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Style for previous and next buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+/* Positioning for the previous button */
+.prev {
+  left: 0;
+}
+
+/* Positioning for the next button */
+.next {
+  right: 0;
+}
+
+/* Styling for the dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+/* Active dot styling */
+.active, .dot:hover {
+  background-color: #717171;
+}

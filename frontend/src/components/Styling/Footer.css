@@ -2,7 +2,6 @@
     background-color: dimgray;
     width: 100%;
     padding-top: 20px;
-    position: absolute; /*place the footer as the last context of the website*/
     bottom: 0; /*place the footer at the bottom of the website*/
     left: 0;
     text-align: center;

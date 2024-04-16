@@ -4,31 +4,17 @@ import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 
-const ProductPage = ({ products }) => {
-  const { subcategory } = useParams();
+const ProductPage = () => {
+  const { mainCategory, subCategory } = useParams();
 
-  // Filter products based on subcategory
-  const filteredProducts = products.filter(product => product.main_category === subcategory);
-
-  useEffect(() => {
-    document.title = `Products - ${subcategory}`;
-  }, [subcategory]);
+  // You can fetch product details based on mainCategory and subCategory here
 
   return (
     <div>
-      <Header/>
-      <Menu products={products} />
-      <h1>Products</h1>
-      <h2>Subcategory: {subcategory}</h2>
-      <ul>
-        {filteredProducts.map(product => (
-          <li key={product.id}>
-            <p>{product.name}</p>
-            {/* Additional product details */}
-          </li>
-        ))}
-      </ul>
-      <Footer/>
+      <h1>Product Page</h1>
+      <h2>Main Category: {mainCategory}</h2>
+      <h2>Sub Category: {subCategory}</h2>
+      {/* Display product details here */}
     </div>
   );
 };
